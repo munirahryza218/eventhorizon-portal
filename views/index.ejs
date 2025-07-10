@@ -1,0 +1,11 @@
+<h1>EventHorizon Events</h1>
+<a href="/create">Add Event</a>
+<ul>
+  <% events.forEach(event => { %>
+    <li>
+      <strong><%= event.name %></strong> - <%= event.date %>
+      [<a href="/update/<%= event.id %>">Edit</a>]
+      [<a href="/delete/<%= event.id %>">Delete</a>]
+    </li>
+  <% }) %>
+</ul>

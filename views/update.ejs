@@ -1,0 +1,9 @@
+<h1>Update Event</h1>
+<form method="POST">
+  Name: <input name="name" value="<%= event.name %>" /><br />
+  Date: <input name="date" value="<%= event.date.toISOString().split('T')[0] %>" type="date"/><br />
+  Description: <input name="description" value="<%= event.description %>" /><br />
+  Location: <input name="location" value="<%= event.location %>" /><br />
+  Capacity: <input name="capacity" value="<%= event.capacity %>" type="number"/><br />
+  <button type="submit">Update</button>
+</form>
